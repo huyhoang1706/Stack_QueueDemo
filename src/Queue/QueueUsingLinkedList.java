@@ -49,6 +49,7 @@ public class QueueUsingLinkedList implements QueueADT {
 
     @Override
     public int peek() {
+        if (isEmpty()) throw new RuntimeException("Empty Queue");
         return front.data;
     }
 
