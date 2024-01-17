@@ -39,10 +39,14 @@ public class QueueUsingArray implements QueueADT {
     public int dequeue() {
         if (isEmpty()) throw new RuntimeException("Queue is empty");
         int dequeueElement = arr[front];
-        for (int i = front; i < rear; i++) {
-            arr[i] = arr[i + 1];
+        if (front == rear) {
+            front = rear = -1;
+        } else {
+            for (int i = front; i < rear; i++) {
+                arr[i] = arr[i + 1];
+            }
+            rear--;
         }
-        rear--;
         return dequeueElement;
     }
 

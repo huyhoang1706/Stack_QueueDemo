@@ -2,14 +2,15 @@ package Queue;
 
 public class Test {
     public static void main(String[] args) {
-        QueueUsingArray queue = new QueueUsingArray();
+/*        QueueUsingArray queue = new QueueUsingArray();
         queue.enqueue(1);
         queue.enqueue(8);
         queue.enqueue(21);
         queue.enqueue(14);
         System.out.println(queue);
-        System.out.println(queue.size());
-        System.out.println(queue);
+        System.out.println(queue.dequeue());
+        queue.enqueue(66);
+        System.out.println(queue);*/
 
         /*QueueUsingLinkedList queue2 = new QueueUsingLinkedList();
         queue2.enqueue(4);
