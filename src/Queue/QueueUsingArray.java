@@ -16,7 +16,7 @@ public class QueueUsingArray implements QueueADT {
     }
 
     public boolean isFull() {
-        return rear == capacity;
+        return size() == capacity;
     }
 
     @Override

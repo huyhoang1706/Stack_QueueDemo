@@ -1,6 +1,6 @@
 package Queue;
 
-// Descending Priority Queue (lower value higher priority)
+// Descending Priority Queue (higher value higher priority)
 public class PriorityQueue implements QueueADT {
     private class Node {
         int data;

@@ -25,6 +25,10 @@ public class Test {
         // stack
         System.out.println(stack);
         stack.push(14);
+        stack.push(18);
+        stack.pop();
         System.out.println(stack);
+        System.out.println(stack.peek());
+
     }
 }
